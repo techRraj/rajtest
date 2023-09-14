@@ -65,7 +65,7 @@
 //     }, []);
 
 //     return (
-//         <div className="container">
+//         <div >
 //             <h1>Data from GET API:</h1>
 //             <ul>
 //                 {Array.isArray(data) && data.map((item, index) => (
@@ -89,7 +89,7 @@ function Login() {
 
     useEffect(() => {
         // Define the URL of the GET API
-        const apiUrl = 'https://jsonplaceholder.typicode.com/todos/1';
+        const apiUrl = 'https://jsonplaceholder.typicode.com/todos';
 
         // Make a GET request to the API
         fetch(apiUrl)
@@ -109,6 +109,25 @@ function Login() {
             <ul>
                 <li>{data.title}</li>
             </ul>
+
+            <table >
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>contact</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{data.id}</td>
+            <td>{data.title}</td>
+            <td>{data.completed}</td>
+          </tr>
+         
+          
+        </tbody>
+      </table>
             <Outer /> {/* Add the Outer component here */}
         </div>
     );

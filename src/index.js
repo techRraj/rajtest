@@ -4,15 +4,30 @@ import React from 'react';
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import reportWebVitals from './reportWebVitals';
+import ProductList from './ProductList';
+// import Table2 from './Table2';
+// import App from './App';
 
-import Login from './Login';
-import Register from './Register';
+
+// import Login from './Login';
+// import Api from './Api';
+//import Register from './Register';
+// import GetAPI from './GetAPI';
+//import Table from './Table';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  
-  <Login/>
+    
+    {/* <GetAPI/> */}
+  {/* <Login/> */}
+  {/* <Table/> */}
   {/* <Register/> */}
+  {/* <Api/> */}
+  {/* <App/> */}
+  {/* <Table2/> */}
+  <ProductList />
+  
   </React.StrictMode>
 );
 

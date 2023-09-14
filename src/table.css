@@ -1,0 +1,27 @@
+/* Table styles */
+.custom-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  /* Header cell styles */
+  .header-cell {
+    background-color: #f2f2f2;
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  /* Data cell styles */
+  .data-cell {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  /* Optional: Style the first row differently (e.g., for a header row) */
+  .custom-table thead tr:first-child .header-cell {
+    background-color: #e0e0e0;
+    font-weight: bold;
+  }
+  
